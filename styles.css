@@ -1,0 +1,244 @@
+@font-face {
+    src: url(fonts/style-thief-font/StyleThief-Mz6w.ttf);
+    font-family: StyleThief;
+}
+* {
+    box-sizing: border-box;
+}
+
+.siteContainer {
+    display: grid;
+    grid-template-rows: 15vh 45vh 45vh 15vh; 
+    grid-template-columns: 1fr 1fr;
+    background-image:url(images/catprint.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+}
+.siteContainer background-image {
+    opacity: 0.5;
+    color: black;
+}
+
+.headContainer {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: scroll;
+}
+
+header {
+    font-family: StyleThief;
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 5px;
+    align-content: center;
+    float: none;
+    margin: auto;
+}
+
+i {
+    padding: .4em;
+    font-size: 20px;
+    vertical-align: center;
+    justify-content: left;
+    color: black;
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    float: right;
+    list-style: none;
+    justify-content: right;
+    align-self: center;
+    padding-right: 2em;
+}
+
+.menu li {
+    padding: .4em;
+    width: auto;
+    text-align: center;
+    float: left;
+    line-height: 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.slicknav_menu {
+    display: none;
+}
+
+@media all and (max-width: 767px) {
+    .slicknav_menu {
+        display: block;
+        float: right;
+        width: 40%;
+        background: transparent;
+        color: black;
+        max-height: 90vh;
+    }
+    .slicknav_menu li {
+        background: 90% yellow;
+        text-align: center;
+        float: left;
+        color: black;
+    }
+    .slicknav_menu a:hover {
+        float: right;
+        background: transparent;
+        color: black;
+    }
+    .menu {
+        display: none;
+    }
+    .header {
+        float: left;
+    }
+    .one .two {
+       vertical-align: inherit;
+    }
+
+}
+
+.mainContainer {
+    display: flex;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    height: 100vh;
+    width: 95vw;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+.one {
+    height: auto;
+    width: 55%;
+    justify-content: left;
+    padding-left: 1em;
+}
+.topText {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black;
+    font-size: 1.0625em;
+    align-items: flex-start;
+}
+.midText {
+    text-transform: capitalize;
+    vertical-align: center;
+    font-family: StyleThief;
+    font-size: 5.625em;
+    color: black;
+    align-items: center;
+}
+.bottomText {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black;
+    font-size: 1.0625em;
+    align-items: flex-end;
+}
+
+.two {
+    max-width: 55%;
+    height:auto;
+    padding-right: 1em;
+    justify-content: center;
+    align-items: flex-start;
+}
+.two img {
+    width: 90%;
+    height: 70%;
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    background-color: yellow;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 2.8em;
+    width: 100%;
+    font-size: 100%;
+}
+#foot {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black;
+    font-size: .875em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.parent {
+    display: grid;
+    grid-template-rows: 15vh 45vh 45vh 15vh; 
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url(images/vinyl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: fit-content;
+    text-align: center;
+}
+#why {
+    padding: 2em;
+    grid-row: 2 / 3;
+    grid-column: 2;
+    text-align: center;
+    width: 130%;
+}
+#headerrr {
+    grid-column: 2;
+    font-family: StyleThief;
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 5px;
+    max-height: 100%;
+}
+
+.discSiteContainer {
+    display: grid;
+    grid-row: 15vh 70vh 15vh;
+    grid-column: 1fr 1fr;
+    background-image: url(images/catprint.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.discContainer {
+    display: flex;
+    grid-row: 2;
+    grid-column: 1 / 4;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95vw;
+}
+.item {
+    width: 30%;
+    text-align: center;
+    padding: 1em;
+    line-height: 0px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 100%;
+    font-style: italic;
+    align-content: center;
+}
+
+.item:hover{
+    transform: scale(1.2);
+    transition: all 600ms;
+    font-family: StyleThief;
+    font-size: 200%;
+}
