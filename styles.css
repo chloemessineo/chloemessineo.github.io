@@ -211,7 +211,7 @@ footer {
     display: grid;
     grid-row: 15vh 70vh 15vh;
     grid-column: 1fr 1fr;
-    background-image: chloemessineo.github.io/catprint.jpg);
+    background-image: chloemessineo.github.io/catprint.jpg;
     background-size: cover;
     background-repeat: no-repeat;
 }
